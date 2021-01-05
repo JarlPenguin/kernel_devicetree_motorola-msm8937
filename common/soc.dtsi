@@ -22,6 +22,10 @@
 		qcom,ce-opp-freq = <100000000>;
 	};
 
+	qcom,lpm-levels {
+		qcom,use-psci;
+	};
+
 #ifdef SOC_MSM8917
 	qcom_tzlog: tz-log@8600720
 #else
