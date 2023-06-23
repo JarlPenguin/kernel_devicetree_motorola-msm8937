@@ -2,9 +2,9 @@
 # to be runtime added by the bootloader (i.e. /chosen properties)
 DTC_FLAGS := -p 1024
 
-dtb-y += msm8917-hannah-p0.dtb
-dtb-y += msm8937-hannah-p0.dtb
-dtb-y += msm8940-hannah-p0.dtb
+dtb-$(CONFIG_MACH_MOTOROLA_HANNAH) += msm8917-hannah-p0.dtb
+dtb-$(CONFIG_MACH_MOTOROLA_HANNAH) += msm8937-hannah-p0.dtb
+dtb-$(CONFIG_MACH_MOTOROLA_HANNAH) += msm8940-hannah-p0.dtb
 
 always		:= $(dtb-y)
 subdir-y	:= $(dts-dirs)
