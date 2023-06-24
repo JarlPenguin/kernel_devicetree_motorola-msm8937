@@ -1,11 +1,5 @@
 &firmware {
 	android {
-		fstab {
-			/delete-node/ vendor;
-
-			system {
-				fsmgr_flags = "wait,verify";
-			};
-		};
+		/delete-node/ fstab;
 	};
 };
